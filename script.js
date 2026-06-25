@@ -12,11 +12,7 @@ function unlockWebsite() {
             document.getElementById("lockScreen").style.display = "none";
             document.getElementById("mainContent").style.display = "block";
             
-            document.getElementById("typingText").innerHTML = "";
-i = 0;
-typeMessage();
-
-            startEffects();
+            
 
         }, 1200);
 
