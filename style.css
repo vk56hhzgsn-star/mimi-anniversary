@@ -156,6 +156,7 @@ opacity:0;
 transform:translateY(-250px) scale(2);
 }
 }
+
 .moon{
 position:fixed;
 top:40px;
@@ -180,6 +181,7 @@ transform:scale(1);
 transform:scale(1.08);
 }
 }
+
 .stars{
 position:fixed;
 top:0;
