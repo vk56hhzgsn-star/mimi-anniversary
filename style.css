@@ -213,19 +213,26 @@ transform:translateY(-250px) scale(2);
 }
 
 .moon{
-position:fixed;
-top:40px;
-right:40px;
-width:120px;
-height:120px;
-border-radius:50%;
-background:#fff7cc;
-box-shadow:
-0 0 30px #fff7cc,
-0 0 60px #fff7cc,
-0 0 100px rgba(255,247,204,0.6);
-z-index:-1;
-animation:moonGlow 4s ease-in-out infinite;
+
+    position:fixed;
+
+    top:60px;
+
+    right:60px;
+
+    width:140px;
+
+    height:140px;
+
+    border-radius:50%;
+
+    background:#fff8dc;
+
+    box-shadow:
+        0 0 50px #fff,
+        0 0 120px #fff8dc;
+
+    z-index:1;
 }
 
 @keyframes moonGlow{
