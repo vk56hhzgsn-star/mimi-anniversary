@@ -17,13 +17,12 @@ function unlockWebsite() {
     }
 }
 
-/* 🌸 EFFECTS */
+/* 🌸 PETALS */
 function startEffects(){
 
-    setInterval(createPetal, 300);
+    setInterval(createPetal, 250);
 }
 
-/* 🌸 FALLING PETALS */
 function createPetal(){
 
     const petal = document.createElement("div");
