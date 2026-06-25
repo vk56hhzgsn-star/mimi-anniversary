@@ -96,3 +96,10 @@ function updateTimer() {
 
 setInterval(updateTimer, 1000);
 updateTimer();
+
+function openLetter(){
+
+    document
+        .querySelector(".envelope")
+        .classList.toggle("open");
+}
