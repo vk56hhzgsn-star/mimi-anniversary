@@ -337,15 +337,7 @@ font-size:14px;
 line-height:1.5;
 }
 .hiddenLetter{
-max-height:0;
-overflow:hidden;
-opacity:0;
-transition:all 1s ease;
-background:white;
-color:#333;
-padding:0 20px;
-border-radius:15px;
-margin-top:20px;
+    display:none;
 }
 
 .hiddenLetter.show{
