@@ -99,7 +99,19 @@ updateTimer();
 
 function openLetter(){
 
-    document.getElementById("loveLetter").style.display="block";
+    const letter = document.getElementById("loveLetter");
+
+    letter.classList.remove("hiddenLetter");
+
+    letter.style.display = "block";
+    letter.style.opacity = "0";
+    letter.style.transform = "translateY(20px)";
+
+    setTimeout(() => {
+        letter.style.transition = "0.8s ease";
+        letter.style.opacity = "1";
+        letter.style.transform = "translateY(0)";
+    }, 50);
 
 }
 function openImage(src){
