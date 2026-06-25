@@ -320,20 +320,3 @@ opacity:0.85;
 margin-top:15px;
 color:#ffb3c6;
 }
-#mainContent{
-display:block !important;
-position:relative !important;
-z-index:999 !important;
-opacity:1 !important;
-visibility:visible !important;
-}
-
-.box{
-display:block !important;
-position:relative !important;
-z-index:999 !important;
-}
-
-body{
-overflow-x:hidden;
-}
