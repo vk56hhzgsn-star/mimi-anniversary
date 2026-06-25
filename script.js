@@ -36,46 +36,30 @@ function createPetal(){
 
     setTimeout(()=>{petal.remove();},6000);
 }
-function updateTimer(){
+function updateTimer() {
 
-    const timerElement =
-        document.getElementById("timer");
+    const timer = document.getElementById("timer");
 
-    if(!timerElement){
+    if (!timer) return;
+
+    const startDate = new Date("2025-12-25T00:00:00");
+    const now = new Date();
+
+    let diff = now - startDate;
+
+    if (diff < 0) {
+        timer.innerHTML = "Our journey begins on 25 Dec 2025 ❤️";
         return;
     }
 
-    const startDate =
-        new Date("2025-12-25T00:00:00");
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+    const minutes = Math.floor((diff / (1000 * 60)) % 60);
+    const seconds = Math.floor((diff / 1000) % 60);
 
-    const now =
-        new Date();
-
-    const diff =
-        now - startDate;
-
-    const days =
-        Math.floor(diff / (1000*60*60*24));
-
-    const hours =
-        Math.floor((diff / (1000*60*60)) % 24);
-
-    const minutes =
-        Math.floor((diff / (1000*60)) % 60);
-
-    const seconds =
-        Math.floor((diff / 1000) % 60);
-
-    timerElement.innerHTML =
-        days + "d " +
-        hours + "h " +
-        minutes + "m " +
-        seconds + "s";
+    timer.innerHTML =
+        `${days} Days ❤️ ${hours} Hours ❤️ ${minutes} Minutes ❤️ ${seconds} Seconds`;
 }
 
-window.onload = function(){
-
-    updateTimer();
-
-    setInterval(updateTimer,1000);
-};
+setInterval(updateTimer, 1000);
+updateTimer();
