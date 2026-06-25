@@ -69,16 +69,25 @@
 
     <!-- GALLERY -->
     <div class="box">
-        <h2>Memories 📸</h2>
 
-        <div class="gallery">
+    <h2>Our Memories 📸</h2>
 
-            <img src="images/1.jpg">
-            <img src="images/2.jpg">
-            <img src="images/3.jpg">
+    <div class="gallery">
 
-        </div>
+        <!-- Put ALL your image tags here -->
+        <img src="images/YOURFILE1.png" onclick="openImage(this.src)">
+        <img src="images/YOURFILE2.png" onclick="openImage(this.src)">
+        <img src="images/YOURFILE3.png" onclick="openImage(this.src)">
+
     </div>
+
+</div>
+
+<div id="imageViewer" onclick="closeImage()">
+
+    <img id="fullImage">
+
+</div>
 
     <!-- LOVE LETTER -->
     <div class="box">
