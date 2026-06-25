@@ -138,3 +138,21 @@ transform:scale(1.05);
 audio{
 display:none;
 }
+.heart{
+position:fixed;
+font-size:24px;
+pointer-events:none;
+animation:heartFly 2s linear forwards;
+z-index:9999;
+}
+
+@keyframes heartFly{
+0%{
+opacity:1;
+transform:translateY(0) scale(1);
+}
+100%{
+opacity:0;
+transform:translateY(-250px) scale(2);
+}
+}
