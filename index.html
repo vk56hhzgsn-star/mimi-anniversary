@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mimi ❤️ Hamu Anniversary</title>
+<title>Mimi ❤️ Hamu</title>
 
 <link rel="stylesheet" href="style.css">
 </head>
@@ -15,69 +15,72 @@
 
     <div class="card">
 
-        <h1>🔒 Private Love Letter</h1>
+        <div style="font-size:50px;">🐱</div>
 
-        <p>Enter the secret code ❤️</p>
+        <h1>Mimi 💖</h1>
 
-        <input type="password" id="password" placeholder="Enter password">
+        <p>Enter the secret love code</p>
+
+        <input type="password" id="password" placeholder="••••">
 
         <button onclick="unlockWebsite()">
-            Unlock ❤️
+            Unlock My Heart ❤️
         </button>
 
     </div>
 
 </div>
 
-<!-- MAIN WEBSITE -->
+<!-- MAIN CONTENT -->
 <div id="mainContent" style="display:none;">
 
+    <!-- HERO -->
     <h1 class="title">Happy Anniversary Mimi ❤️</h1>
+    <p class="subtitle">Forever yours — Hammad 💖</p>
 
-    <p class="subtitle">
-        Forever yours, Hammad 💖
-    </p>
+    <!-- MUSIC BUTTON -->
+    <button onclick="document.getElementById('song').play()">
+        🎵 Play Our Song
+    </button>
 
-    <section class="box">
-        <h2>Our Special Dates 🌙</h2>
-        <p>14 April 2026 — Found your home</p>
+    <audio id="song">
+        <source src="music/dil-dardeh.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- STORY -->
+    <div class="box">
+        <h2>Our Story 🌙</h2>
+        <p>14 April 2026 — I found you</p>
         <p>12 May 2026 — First breakfast</p>
         <p>13 May 2026 — First eye contact & kiss</p>
-    </section>
+    </div>
 
-    <section class="box">
-        <h2>10 Reasons I Love You 💖</h2>
-        <p>You are my peace</p>
-        <p>You are my happiness</p>
-        <p>You are my home</p>
-        <p>You are my everything</p>
-        <p>And always will be ❤️</p>
-    </section>
-
-    <section class="box">
-        <h2>Gallery 📸</h2>
+    <!-- GALLERY -->
+    <div class="box">
+        <h2>Memories 📸</h2>
 
         <div class="gallery">
+
             <img src="images/1.jpg">
             <img src="images/2.jpg">
             <img src="images/3.jpg">
+
         </div>
+    </div>
 
-    </section>
-
-    <section class="box">
-        <h2>Love Letter 💌</h2>
+    <!-- LOVE LETTER -->
+    <div class="box">
+        <h2>💌 Letter to Mimi</h2>
 
         <p>
             Mimi,<br><br>
-            You are the best thing that ever happened to me.<br>
+            You are my peace, my home, my world.<br>
             I love you endlessly.<br><br>
 
             Forever yours,<br>
             <b>Hammad ❤️</b>
         </p>
-
-    </section>
+    </div>
 
 </div>
 
