@@ -5,10 +5,16 @@ function unlockWebsite() {
 
     if (password === "1225") {
 
-        document.getElementById("lockScreen").style.display = "none";
-        document.getElementById("mainContent").style.display = "block";
+        createHeartBurst();
 
-        startEffects();
+        setTimeout(() => {
+
+            document.getElementById("lockScreen").style.display = "none";
+            document.getElementById("mainContent").style.display = "block";
+
+            startEffects();
+
+        }, 1200);
 
     } else {
 
