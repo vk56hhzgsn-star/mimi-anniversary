@@ -38,21 +38,44 @@ function createPetal(){
 }
 function updateTimer(){
 
+    const timerElement =
+        document.getElementById("timer");
+
+    if(!timerElement){
+        return;
+    }
+
     const startDate =
         new Date("2025-12-25T00:00:00");
 
-    const now = new Date();
+    const now =
+        new Date();
 
-    let diff = now - startDate;
+    const diff =
+        now - startDate;
 
-    let days = Math.floor(diff / (1000 * 60 * 60 * 24));
-    let hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
-    let minutes = Math.floor((diff / (1000 * 60)) % 60);
-    let seconds = Math.floor((diff / 1000) % 60);
+    const days =
+        Math.floor(diff / (1000*60*60*24));
 
-    document.getElementById("timer").innerHTML =
-        `${days}d ${hours}h ${minutes}m ${seconds}s`;
+    const hours =
+        Math.floor((diff / (1000*60*60)) % 24);
+
+    const minutes =
+        Math.floor((diff / (1000*60)) % 60);
+
+    const seconds =
+        Math.floor((diff / 1000) % 60);
+
+    timerElement.innerHTML =
+        days + "d " +
+        hours + "h " +
+        minutes + "m " +
+        seconds + "s";
 }
 
-setInterval(updateTimer, 1000);
-updateTimer();
+window.onload = function(){
+
+    updateTimer();
+
+    setInterval(updateTimer,1000);
+};
