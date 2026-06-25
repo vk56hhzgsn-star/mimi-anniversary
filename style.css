@@ -506,15 +506,21 @@ animation:fadeUp .8s ease both;
 }
 .envelope{
     width:220px;
-    height:150px;
+    height:140px;
+    background:#ffb6c1;
+    border-radius:15px;
     margin:30px auto;
-    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
     cursor:pointer;
-    transition:.4s;
+    font-size:50px;
+    box-shadow:0 10px 25px rgba(0,0,0,.3);
 }
 
 .envelope:hover{
-    transform:translateY(-8px) scale(1.03);
+    transform:scale(1.05);
+    transition:.3s;
 }
 
 .envelope-body{
