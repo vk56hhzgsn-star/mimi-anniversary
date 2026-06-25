@@ -229,16 +229,28 @@ transform:translateY(-250px) scale(2);
 }
 
 .moon{
-    position:fixed;
-    top:60px;
-    right:60px;
     width:140px;
     height:140px;
     border-radius:50%;
     background:#fff8dc;
     box-shadow:0 0 50px #fff, 0 0 120px #fff8dc;
 
-    z-index:0; /* important fix */
+    position:fixed;
+    top:60px;
+    right:60px;
+
+    z-index:0;
+}
+
+body{
+    position:relative;
+    z-index:1;
+}
+
+#lockScreen,
+#mainContent{
+    position:relative;
+    z-index:2;
 }
 
 @keyframes moonGlow{
