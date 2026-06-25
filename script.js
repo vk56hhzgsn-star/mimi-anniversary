@@ -11,6 +11,10 @@ function unlockWebsite() {
 
             document.getElementById("lockScreen").style.display = "none";
             document.getElementById("mainContent").style.display = "block";
+            
+            document.getElementById("typingText").innerHTML = "";
+i = 0;
+typeMessage();
 
             startEffects();
 
@@ -103,3 +107,35 @@ function openLetter(){
         .getElementById("loveLetter")
         .classList.toggle("show");
 }
+function openImage(src){
+
+    document.getElementById("fullImage").src = src;
+
+    document.getElementById("imageViewer")
+        .style.display = "flex";
+}
+
+function closeImage(){
+
+    document.getElementById("imageViewer")
+        .style.display = "none";
+}
+const message =
+"Mimi, you are my favorite place in the world ❤️";
+
+let i = 0;
+
+function typeMessage(){
+
+    if(i < message.length){
+
+        document.getElementById("typingText")
+            .innerHTML += message.charAt(i);
+
+        i++;
+
+        setTimeout(typeMessage,70);
+    }
+}
+
+setTimeout(typeMessage,1500);
