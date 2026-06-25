@@ -139,3 +139,19 @@ function typeMessage(){
 }
 
 setTimeout(typeMessage,1500);
+
+let musicPlaying = false;
+
+function toggleMusic(){
+
+    const song =
+        document.getElementById("song");
+
+    if(musicPlaying){
+        song.pause();
+    }else{
+        song.play();
+    }
+
+    musicPlaying = !musicPlaying;
+}
