@@ -543,3 +543,7 @@ animation:fadeUp .8s ease both;
     margin-top:30px;
     animation:fadeUp .7s ease;
 }
+#mainContent{
+    position:relative;
+    z-index:10;
+}
