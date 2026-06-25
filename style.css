@@ -320,3 +320,34 @@ opacity:0.85;
 margin-top:15px;
 color:#ffb3c6;
 }
+#lockScreen{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    min-height:100vh;
+}
+
+.kitty-image{
+    width:220px;
+    margin-bottom:-40px;
+    z-index:20;
+    animation:kittyFloat 3s ease-in-out infinite;
+}
+
+@keyframes kittyFloat{
+    0%,100%{
+        transform:translateY(0px);
+    }
+    50%{
+        transform:translateY(-10px);
+    }
+}
+
+.card{
+    background:rgba(20,20,35,0.9);
+    backdrop-filter:blur(15px);
+    border-radius:30px;
+    padding:40px;
+    box-shadow:0 0 35px rgba(255,105,180,0.35);
+}
