@@ -36,3 +36,23 @@ function createPetal(){
 
     setTimeout(()=>{petal.remove();},6000);
 }
+function updateTimer(){
+
+    const startDate =
+        new Date("2025-12-25T00:00:00");
+
+    const now = new Date();
+
+    let diff = now - startDate;
+
+    let days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    let hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+    let minutes = Math.floor((diff / (1000 * 60)) % 60);
+    let seconds = Math.floor((diff / 1000) % 60);
+
+    document.getElementById("timer").innerHTML =
+        `${days}d ${hours}h ${minutes}m ${seconds}s`;
+}
+
+setInterval(updateTimer, 1000);
+updateTimer();
