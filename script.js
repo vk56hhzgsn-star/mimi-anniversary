@@ -99,9 +99,8 @@ updateTimer();
 
 function openLetter(){
 
-    document
-        .getElementById("loveLetter")
-        .classList.toggle("show");
+    document.getElementById("loveLetter").style.display="block";
+
 }
 function openImage(src){
 
