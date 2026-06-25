@@ -1,0 +1,19 @@
+body{
+    background: pink;
+    color: white;
+    text-align:center;
+    font-family: Arial, sans-serif;
+}
+
+h1{
+    color:#ff1493;
+    font-size:3rem;
+}
+
+section{
+    background:white;
+    color:black;
+    margin:20px;
+    padding:20px;
+    border-radius:20px;
+}
