@@ -100,6 +100,6 @@ updateTimer();
 function openLetter(){
 
     document
-        .querySelector(".envelope")
-        .classList.toggle("open");
+        .getElementById("loveLetter")
+        .classList.toggle("show");
 }
